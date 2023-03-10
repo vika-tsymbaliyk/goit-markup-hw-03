@@ -21,14 +21,16 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav>
-          <a class="link logotype" href="./index.html"
-            >Web<span class="logotype-two">Studio</span></a
-          >
+    <header>
+      <div class="container header-conainer">
+        <nav class="nav">
+          <div class="header-line-logotype">
+            <a class="link logotype" href="./index.html"
+              >Web<span class="logotype-two">Studio</span></a
+            >
+          </div>
           <!-- Навігація на інші сторінки -->
-          <ul class="header-list list">
+          <ul class="menu-nav list">
             <li class="header-list-item">
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
@@ -40,8 +42,8 @@
             </li>
           </ul>
         </nav>
-        <address class="address">
-          <ul class="list">
+        <address>
+          <ul class="list adress-list">
             <li class="address-item">
               <a class="link address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -58,12 +60,12 @@
     </header>
 
     <main>
-      <section class="studio-section-one">
-        <div class="container section">
-          <h1 class="studio-section-one-title">
+      <section class="studio-section-hero">
+        <div class="container section hero-section">
+          <h1 class="studio-section-hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="studio-section-one-btn" type="button">
+          <button class="studio-section-hero-btn" type="button">
             Order Service
           </button>
         </div>
@@ -71,7 +73,7 @@
 
       <section>
         <div class="container section">
-          <h2 class="section-titles"></h2>
+          <h2 class="section-titles section-one-title"></h2>
           <ul class="list">
             <li>
               <h3 class="sections-litle-titles">Strategy</h3>
@@ -111,7 +113,7 @@
       <section>
         <div class="container section">
           <h2 class="section-titles">What are we doing</h2>
-          <ul class="list">
+          <ul class="list img-list">
             <li>
               <img
                 src="./images/img-desctop.jpg"
@@ -143,42 +145,52 @@
       <section class="section-our-team">
         <div class="container section">
           <h2 class="section-titles">Our Team</h2>
-          <ul class="list">
-            <li>
+          <ul class="list our-team-list">
+            <li class="team-card">
               <img
                 src="./images/ptoto-mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
-              <h3 class="sections-litle-titles text-center">Mark Guerrero</h3>
-              <p class="studio-section-text text-center">Product Designer</p>
+              <div class="team-card-name">
+                <h3 class="sections-litle-titles text-center">Mark Guerrero</h3>
+                <p class="studio-section-text text-center">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/ptoto-tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
               />
-              <h3 class="sections-litle-titles text-center">Tom Ford</h3>
-              <p class="studio-section-text text-center">Frontend Developer</p>
+              <div class="team-card-name">
+                <h3 class="sections-litle-titles text-center">Tom Ford</h3>
+                <p class="studio-section-text text-center">
+                  Frontend Developer
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/ptoto-camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
-              <h3 class="sections-litle-titles text-center">Camila Garcia</h3>
-              <p class="studio-section-text text-center">Marketing</p>
+              <div class="team-card-name">
+                <h3 class="sections-litle-titles text-center">Camila Garcia</h3>
+                <p class="studio-section-text text-center">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="team-card">
               <img
                 src="./images/ptoto-daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
-              <h3 class="sections-litle-titles text-center">Daniel Wilson</h3>
-              <p class="studio-section-text text-center">UI Designer</p>
+              <div class="team-card-name">
+                <h3 class="sections-litle-titles text-center">Daniel Wilson</h3>
+                <p class="studio-section-text text-center">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -186,7 +198,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-wrap">
         <a class="link logotype" href="./index.html"
           >Web<span class="logotype-two">Studio</span></a
         >
