@@ -299,5 +299,5 @@ img {
 .portfolio-card {
   border-bottom: 1px solid var(--color-cornflower);
   padding-bottom: 32px;
-  flex-basis: calc("(100% - 48px) / 3");
+  flex-basis: calc((100% - 48px) / 3);
 }
