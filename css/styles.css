@@ -301,8 +301,3 @@ img {
   padding-bottom: 32px;
   flex-basis: 360px;
 }
-.portfolio-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
