@@ -40,11 +40,11 @@ address {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  outline: 5px solid tomato;
-
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -58,6 +58,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 
 .logotype {
@@ -80,7 +81,6 @@ img {
 }
 
 .list {
-  outline: 5px solid tomato;
   list-style-type: none;
 }
 
@@ -89,7 +89,6 @@ img {
 }
 /*End NEW*/
 .link {
-  outline: 5px solid tomato;
   text-decoration: none;
 }
 
@@ -143,6 +142,8 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  max-width: 496px;
+  margin: 0 auto;
 }
 .studio-section-hero-btn {
   font-family: "Roboto", sans-serif;
@@ -156,7 +157,7 @@ img {
   color: var(--color-white);
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: 48px auto 0px;
   min-width: 169px;
   height: 56px;
 }
@@ -188,10 +189,17 @@ img {
   text-transform: capitalize;
   color: var(--color-grey);
 }
-
-.section-one-title {
+.section-one {
+  padding-top: 120px;
 }
-
+.section-one-title {
+  display: none;
+}
+.section-one-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
 .section-our-team {
   background: var(--color-cloud);
   padding-top: 120px;
@@ -200,20 +208,17 @@ img {
   text-align: center;
 }
 .img-list {
-  outline: 5px solid tomato;
   display: flex;
   justify-content: space-between;
   gap: 24px;
   margin-top: 72px;
 }
 .our-team-list {
-  outline: 5px solid tomato;
   display: flex;
   gap: 24px;
   margin-top: 72px;
 }
 .team-card {
-  outline: 5px solid tomato;
   background-color: var(--color-white);
 }
 .team-card-name {
@@ -250,6 +255,9 @@ img {
 }
 
 /*Page Portfolio*/
+.portfolio-section {
+  padding-top: 96px;
+}
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -261,13 +269,40 @@ img {
   border-radius: 4px;
   color: var(--color-iris);
   cursor: pointer;
+  padding: 12px 24px;
 }
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto 72px;
+}
+
 .portfolio-btn:hover {
   background: var(--color-ocean);
   color: var(--color-white);
+}
+.portfolio-titles {
+  margin: 32px auto 8px;
 }
 .portfolio-section-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.portfolio-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-card {
+  border-bottom: 1px solid var(--color-cornflower);
+  padding-bottom: 32px;
+  flex-basis: 360px;
+}
+.portfolio-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
